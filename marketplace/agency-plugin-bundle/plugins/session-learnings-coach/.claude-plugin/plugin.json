@@ -1,0 +1,18 @@
+{
+  "name": "session-learnings-coach",
+  "description": "A Copilot CLI plugin for turning AI-assisted work sessions into reusable lessons, better prompts, and durable operating principles.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Session Learnings Coach",
+    "email": "nandres@microsoft.com"
+  },
+  "homepage": "https://github.com/nandres_microsoft/session-learnings-coach",
+  "keywords": [
+    "session-learnings",
+    "retrospective",
+    "ai-collaboration",
+    "prompt-improvement",
+    "lessons-learned"
+  ],
+  "repository": "https://github.com/nandres_microsoft/session-learnings-coach"
+}

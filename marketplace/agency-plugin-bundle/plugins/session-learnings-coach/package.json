@@ -1,0 +1,8 @@
+{
+  "name": "session-learnings-coach-plugin",
+  "private": true,
+  "description": "Agency-style package metadata for the Session Learnings Coach plugin.",
+  "scripts": {
+    "test": "node --test"
+  }
+}
