@@ -26,6 +26,19 @@ Select **Session Learnings Coach** from `/agent`, then ask:
 - "Turn this failure into a reusable lesson."
 - "What prompt would have avoided this?"
 - "Create a team-safe summary of these learnings."
+- "Use my configured grounding lessons while reviewing this session."
+
+## Optional grounding setup
+
+To let the coach consider prior lessons or domain-specific guidance, configure grounding sources after install.
+
+See:
+
+```text
+plugins\session-learnings-coach\skills\session-learnings-playbook\references\grounding-sources.md
+```
+
+Grounding sources are optional and user-controlled. Do not place private local paths in a shared plugin package.
 
 ## Uninstall
 
@@ -43,5 +56,6 @@ plugins/
     agency.json
     agents/session-learnings-coach.md
     skills/session-learnings-playbook/...
+    skills/session-learnings-playbook/references/grounding-sources.md
     README.md, CHANGELOG.md, owners.txt
 ```

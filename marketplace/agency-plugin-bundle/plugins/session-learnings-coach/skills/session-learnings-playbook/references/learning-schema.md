@@ -16,8 +16,33 @@ Recommended JSON shape:
   "action": "Use the marketplace's visible categories before naming a package or writing documentation.",
   "betterPrompt": null,
   "promotionStatus": "candidate-rule",
-  "tags": ["marketplace", "positioning", "terminology"]
+  "tags": ["marketplace", "positioning", "terminology"],
+  "groundingReferences": [
+    {
+      "source": "references/grounding-sources.md",
+      "type": "configuration",
+      "note": "Optional user-configured grounding source used to compare against prior lessons."
+    }
+  ]
 }
 ```
 
 Markdown can be generated from JSON, and JSON can be generated from a Markdown retrospective if the fields are clear.
+
+## Grounding reference field
+
+`groundingReferences` is optional. Use it when the learning was informed by configured prior lessons or reference bundles.
+
+```json
+{
+  "groundingReferences": [
+    {
+      "source": "C:\\path\\to\\team-lessons.md",
+      "type": "local-markdown",
+      "note": "Used to compare whether this issue repeated a known workflow pattern."
+    }
+  ]
+}
+```
+
+Do not place private source content directly into the schema field. Store only the source name/path and a short reason it influenced the learning.

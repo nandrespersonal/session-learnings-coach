@@ -15,6 +15,7 @@ Session Learnings Coach helps capture higher-order lessons from real work sessio
 - what worked
 - what failed
 - what pattern repeated
+- which prior lessons or grounding sources apply
 - what prompt would have helped
 - what rule or habit should change
 - what should be shared with a team
@@ -31,6 +32,7 @@ The product is intentionally humble. It does not claim to solve knowledge manage
 - not a full knowledge-management platform
 - not a team wiki by itself
 - not a tool that publishes private lessons without review
+- not a tool that hardcodes personal or team lesson files into reusable skill logic
 
 ## Product promise
 
@@ -43,6 +45,13 @@ Session Learnings Coach helps individuals and teams convert AI-assisted work int
 | `learnings.md` | Human-readable learning journal |
 | `learnings.json` | Optional machine-readable learning records |
 | `team-learnings.md` | Sanitized team-shareable export |
+| `grounding-sources.md` | Configuration model for optional prior-lesson/domain grounding |
+
+## Grounding references
+
+Session Learnings Coach can use optional grounding references when a user wants a retrospective to consider prior lessons, recurring patterns, or domain-specific guidance.
+
+Grounding sources are user-configured. They may point to local Markdown files, local JSON files, exported learning bundles, or product-provided reference packs. The skill should load only explicit/configured sources and record source names or paths in `groundingReferences`.
 
 ## Package outputs
 
@@ -59,6 +68,7 @@ marketplace\agency-plugin-bundle\
       README.md
       agents\session-learnings-coach.md
       skills\session-learnings-playbook\SKILL.md
+      skills\session-learnings-playbook\references\grounding-sources.md
 ```
 
 ## Suggested Marketplace title
@@ -67,6 +77,6 @@ marketplace\agency-plugin-bundle\
 
 ## Suggested Marketplace description
 
-Session Learnings Coach helps turn AI-assisted work sessions into reusable lessons, better prompts, and team-ready operating principles. It guides lightweight retrospectives, separates one-off mistakes from repeatable patterns, and helps users decide what should become a personal rule, team guidance, or future prompt improvement.
+Session Learnings Coach helps turn AI-assisted work sessions into reusable lessons, better prompts, and team-ready operating principles. It guides lightweight retrospectives, separates one-off mistakes from repeatable patterns, can compare against configured grounding references, and helps users decide what should become a personal rule, team guidance, or future prompt improvement.
 
-This is an early plugin package. Feedback is welcome, especially on additional learning types, export formats, privacy levels, and promotion workflows.
+This is an early plugin package. Feedback is welcome, especially on additional learning types, grounding source formats, export formats, privacy levels, and promotion workflows.

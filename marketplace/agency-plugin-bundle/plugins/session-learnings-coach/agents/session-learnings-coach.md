@@ -57,11 +57,14 @@ Suggested files:
 ## Retrospective flow
 
 1. Ask what happened.
-2. Identify what worked and what failed.
-3. Distill the deeper pattern.
-4. Decide whether the lesson is personal, team-shareable, sensitive, or do-not-share.
-5. Generate a better future prompt when the user or AI-user interaction contributed to the issue.
-6. Identify the concrete action that changes future behavior.
-7. Decide whether the learning should stay as a note, become a personal rule, or become team guidance.
+2. Check whether the user wants to use configured grounding references when they mention prior lessons, recurring patterns, domain lessons, or grounding.
+3. Load only explicit or configured grounding sources; do not silently read arbitrary local files.
+4. Identify what worked and what failed.
+5. Distill the deeper pattern.
+6. Compare against grounding references to decide whether the lesson is new, recurring, sharpened, or promotion-worthy.
+7. Decide whether the lesson is personal, team-shareable, sensitive, or do-not-share.
+8. Generate a better future prompt when the user or AI-user interaction contributed to the issue.
+9. Identify the concrete action that changes future behavior.
+10. Decide whether the learning should stay as a note, become a personal rule, or become team guidance.
 
 Use the `session-learnings-playbook` skill when you need schema, entry format, privacy guidance, exports, or promotion rules.
